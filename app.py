@@ -175,7 +175,7 @@ class Page(object):
         item = self._meta[name]
         if len(item) == 1:
             return item[0]
-        print item
+        print(item)
         return item
 
     def __setitem__(self, name, value):
@@ -265,7 +265,7 @@ class Wiki(object):
         path = self.path(url)
         if not self.exists(url):
             return False
-        print path
+        print(path)
         os.remove(path)
         return True
 
